@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Sofia&display=swap');
+
+$merriweather: 'Merriweather', serif;
+$sofia: 'Sofia', cursive;
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+	margin:0px auto;
+	padding: $pad-up-dn $pad-left-right;
+}
+
+header {
+    font-family: $sofia;
+    color: #444;
+    font-size: xx-large;
+}
+
+.row-header{
+    @include zero-margin(0px,0px);
+}
+
+.row-content {
+    @include zero-margin(50px,0px);
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.nav-link:hover {
+    border-bottom: 2px dotted #666;
+}
+
+.card-title {
+    font-family: $merriweather;
+}
+
+.title-text {
+    font-family: $merriweather;;
+}
+
+.social {
+    color: #666;
+}
+
+.social:hover {
+    color: #444;
+}
